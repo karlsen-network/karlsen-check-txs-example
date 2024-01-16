@@ -2,18 +2,18 @@ import asyncio
 import logging
 import time
 
-from kaspad.KaspadMultiClient import KaspadMultiClient
+from karlsend.KarlsendMultiClient import KarlsendMultiClient
 
 # get file logger
 logging.basicConfig(format="%(asctime)s::%(levelname)s::%(name)s::%(message)s", level=logging.ERROR,
                     handlers=[logging.StreamHandler()])
 _logger = logging.getLogger(__name__)
-kaspad_hosts = ["seeder2.kaspad.net:16110"]
+karlsend_hosts = ["mainnet-dnsseed-1.karlsencoin.com:42110"]
 
 
 async def main():
-    # create Kaspad client
-    client = KaspadMultiClient(kaspad_hosts)
+    # create Karlsend client
+    client = KarlsendMultiClient(karlsend_hosts)
     await client.initialize_all()
 
     # for this example, just start at the tip of the blockdag.. need to wait a few seconds
