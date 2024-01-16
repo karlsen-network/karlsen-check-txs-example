@@ -8,7 +8,7 @@ from karlsend.KarlsendMultiClient import KarlsendMultiClient
 logging.basicConfig(format="%(asctime)s::%(levelname)s::%(name)s::%(message)s", level=logging.ERROR,
                     handlers=[logging.StreamHandler()])
 _logger = logging.getLogger(__name__)
-karlsend_hosts = ["seeder2.karlsend.net:16110"]
+karlsend_hosts = ["mainnet-dnsseed-1.karlsencoin.com:42110"]
 
 
 async def main():

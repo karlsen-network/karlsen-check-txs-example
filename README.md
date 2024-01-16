@@ -1,4 +1,4 @@
-# Example for understanding Kaspa TX acception
+# Example for understanding Karlsen TX acception
 
 Run main.py it shows you the following output:
 
